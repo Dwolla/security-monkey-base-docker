@@ -42,15 +42,6 @@ LOG_CFG = {
         }
     },
     'handlers': {
-        'file': {
-            'class': 'logging.handlers.RotatingFileHandler',
-            'level': 'DEBUG',
-            'formatter': 'standard',
-            'filename': '/var/log/security_monkey/securitymonkey.log',
-            'maxBytes': 10485760,
-            'backupCount': 100,
-            'encoding': 'utf8'
-        },
         'console': {
             'class': 'logging.StreamHandler',
             'level': 'DEBUG',
@@ -60,11 +51,11 @@ LOG_CFG = {
     },
     'loggers': {
         'security_monkey': {
-            'handlers': ['file', 'console'],
+            'handlers': ['console'],
             'level': 'DEBUG'
         },
         'apscheduler': {
-            'handlers': ['file', 'console'],
+            'handlers': ['console'],
             'level': 'INFO'
         }
     }

@@ -2,7 +2,7 @@ FROM ubuntu:17.10
 MAINTAINER dev@dwolla.com
 USER root
 
-ENV SECURITY_MONKEY_VERSION=v0.9.1
+ENV SECURITY_MONKEY_VERSION=v0.9.2
 
 RUN apt-get update &&\
     apt-get -y install python-pip python-dev python-psycopg2 libpq-dev git libffi-dev python-virtualenv libssl-dev &&\
